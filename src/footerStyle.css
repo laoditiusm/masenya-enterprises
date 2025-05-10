@@ -1,0 +1,386 @@
+footer {
+    background-color: #0f1826;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .cta-box {
+    background-color: #27272e;
+    padding: 30px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 12px 16px rgba(0,0,0,0.15);
+  }
+
+  .cta-box h2 {
+    margin: 0;
+    color: white;
+    font-size: 23px;
+  }
+
+  .cta-box p {
+    margin: 5px 0 0;
+    color: #e0e0e0;
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    background-color: #0f1826;
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid #444;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    background-color: #111e33;
+    border-color: white;
+    color: aliceblue;
+  }
+
+  .footer-main {
+    padding: 60px 40px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1700px;
+  }
+
+  .footer-column {
+    flex: 1 1 150px;
+    margin: 10px 20px;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+    color: #ccc;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icons i {
+    background-color: #7d84d7;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  .footer-main {
+    margin-top: auto; /* Push footer to the bottom if page is short */
+  }
+
+  @media (max-width: 2560px){
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+      align-items: start;
+    }
+    
+    .footer-column {
+      /* No need for flex styles in a grid item */
+      width: auto;
+    }
+  
+
+    .footer-column h4 {
+      font-size: 18px;
+    }
+
+    .footer-column ul li {
+      font-size: 14px;
+    }
+
+    .cta-box h2 {
+      font-size: 28px;
+    }
+    .cta-box p {
+      font-size: 20px;
+    }
+
+    .cta-box {
+      padding: 30px 10rem;
+      gap: 20px;
+    }
+
+    .cta-btn {
+      padding: 10px 30px;
+      font-size: 18px;
+    }
+  }
+
+
+  @media (max-width: 1440px){
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+      align-items: start;
+    }
+    
+    .footer-column {
+      /* No need for flex styles in a grid item */
+      width: auto;
+    }
+    
+    .footer-main {
+      padding: 20px 20px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-column h4 {
+      font-size: 18px;
+    }
+
+    .footer-column ul li {
+      font-size: 14px;
+    }
+
+    .cta-box h2 {
+      font-size: 22px;
+    }
+    .cta-box p {
+      font-size: 16px;
+    }
+
+    .cta-box {
+      padding: 20px 3rem;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+      align-items: start;
+    }
+    
+    .footer-column {
+      /* No need for flex styles in a grid item */
+      width: auto;
+    }
+    
+    .footer-main {
+      padding: 20px 20px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-column h4 {
+      font-size: 18px;
+    }
+
+    .footer-column ul li {
+      font-size: 14px;
+    }
+
+    .cta-box h2 {
+      font-size: 22px;
+    }
+    .cta-box p {
+      font-size: 16px;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    .cta-box {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 80%;
+      gap: 10px;
+      padding-left: 3rem;
+      padding-right: 3rem;}
+
+    .cta-box h2 {
+      font-size: 22px;
+    }
+    .cta-box p {
+      font-size: 16px;
+    }
+
+    .cta-btn {
+      padding: 7px 20px;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .cta-box {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 80%;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+      align-items: start;
+    }
+    
+    .footer-column {
+      /* No need for flex styles in a grid item */
+      width: auto;
+    }
+    
+
+    .footer-column h4 {
+      font-size: 18px;
+    }
+
+    .footer-column ul li {
+      font-size: 14px;
+    }
+
+.cta-box {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 90%;
+      flex-direction: column;
+    }
+
+    .cta-box h2 {
+      font-size: 20px !important;
+    }
+    .cta-box p {
+      font-size: 14px;
+    }
+
+    .cta-btn {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    .social-icons i {
+      padding: 8px;
+    }
+
+    .footer-main {
+      padding: 20px 10px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+      align-items: start;
+    }
+    
+    .footer-column {
+      /* No need for flex styles in a grid item */
+      width: auto;
+    }
+    
+
+    .footer-column h4 {
+      font-size: 18px;
+    }
+
+    .footer-column ul li {
+      font-size: 14px;
+    }
+
+    .cta-box {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    h2 {
+      font-size: 20px !important;
+    }
+
+
+    .cta-btn {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    .social-icons i {
+      padding: 8px;
+    }
+
+    .footer-main {
+      padding: 20px 10px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .footer-column {
+      flex: 1 1 100%;
+    }
+
+    .footer-column h4 {
+      font-size: 18px;
+    }
+
+    .footer-column ul li {
+      font-size: 14px;
+    }
+
+    .cta-box {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 80%;
+    }
+  
+    .cta-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .cta-box h2 {
+      font-size: 1.1rem !important;
+    }
+    .cta-box p {
+      font-size: 0.9rem;
+    }
+  
+
+
+    .social-icons i {
+      padding: 8px;
+    }
+
+    .footer-main {
+      padding: 20px 10px;
+    }
+  }
