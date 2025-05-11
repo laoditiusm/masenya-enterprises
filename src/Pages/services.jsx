@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <div className='sect-container main' id='service-sect'>
             <div className="container sect-content" data-scroll-index="3">
-                <p className="text-blk heading standard-header" id='ServiceHeading'>Our Services</p>
+                <p className="text-blk heading standard-header" id='ServiceHeading' data-aos="fade-up">Our Services</p>
 
                 <section className="services">
                     <div className="card" data-aos="zoom-in">
@@ -69,12 +69,12 @@ const Services = () => {
                 <section className="split-section light" data-aos="fade-up">
   <div className="split-container">
     <div className="split-text">
-      <h3 className='standard-header'>Our Development Philosophy</h3>
+      <p data-aos="fade-up" className='standard-header'>Our Development Philosophy</p>
       <p>We don't just build solutions — we craft experiences that drive engagement and growth🎯:</p>
       <ul>
-        <li>Agile and adaptive workflows for rapid delivery</li>
-        <li>Clean, maintainable, and scalable codebases</li>
-        <li>Design thinking baked into every stage</li>
+        <li><i className="fas fa-check-circle"></i> Agile and adaptive workflows for rapid delivery</li>
+        <li><i className="fas fa-check-circle"></i> Clean, maintainable, and scalable codebases</li>
+        <li><i className="fas fa-check-circle"></i> Design thinking baked into every stage</li>
       </ul>
     </div>
     <div
@@ -90,12 +90,12 @@ const Services = () => {
 <section className="split-section dark" data-aos="fade-up">
   <div className="split-container reverse">
     <div className="split-text">
-      <h3 className='standard-header'>How We Help You Succeed</h3>
+      <p className='standard-header'>How We Help You Succeed</p>
       <p>We align our strategies with your goals to ensure meaningful results📊:</p>
       <ul>
-        <li>Data-driven decisions for measurable impact</li>
-        <li>End-to-end support from ideation to launch</li>
-        <li>Continuous optimization based on user feedback</li>
+        <li><i className="fas fa-check-circle"></i> Data-driven decisions for measurable impact</li>
+        <li><i className="fas fa-check-circle"></i> End-to-end support from ideation to launch</li>
+        <li><i className="fas fa-check-circle"></i> Continuous optimization based on user feedback</li>
       </ul>
     </div>
     <div

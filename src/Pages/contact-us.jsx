@@ -57,11 +57,11 @@ const ContactUs = () => {
                     </li>
                     <li>
                       <div className="info-left"><i className="fas fa-at"></i></div>
-                      <div className="info-right"><h4>info@masenyaenterprise.com</h4></div>
+                      <div className="info-right"><h4>info@masenyaenterprise.co.za</h4></div>
                     </li>
                     <li>
                       <div className="info-left"><i className="fas fa-map-marker-alt"></i></div>
-                      <div className="info-right"><h4>Somewhere in South Africa, South Africa</h4></div>
+                      <div className="info-right"><h4>Cape Town, South Africa</h4></div>
                     </li>
                   </ul>
                 </div>

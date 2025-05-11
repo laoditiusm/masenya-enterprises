@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div className="sect-container main" id="landing">
-      <div className=''>
+      <div className='cont'>
       <div className="hero sect-content" data-aos="fade-up">
         <div className="badge" data-aos="fade-in">Proudly Local, Tech-Driven Innovation</div>
         <div className="headline" data-aos="fade-up">
@@ -29,7 +29,7 @@ const Home = () => {
 
       {/* Tiles Section */}
       <div className="tiles-container">
-        <h2 data-aos="fade-up" className='standard-header'>Our Solutions in Action</h2>
+        <p data-aos="fade-up" className='standard-header'>Our Solutions in Action</p>
         <div className="tiles">
           <div className="tile" data-aos="zoom-in">
             <div className="tile-icon"><i className="fas fa-laptop-code"></i></div>
@@ -49,7 +49,7 @@ const Home = () => {
           <div className="tile" data-aos="zoom-in" data-aos-delay="300">
             <div className="tile-icon"><i className="fas fa-headset"></i></div>
             <h3>Support & Maintenance</h3>
-            <p>We offer ongoing support and maintenance to ensure your systems stay up-to-date and functional.</p>
+            <p>Ongoing support and maintenance to ensure your systems stay up-to-date and functional.</p>
           </div>
         </div>
       </div>
@@ -58,26 +58,26 @@ const Home = () => {
         <section className="split-section dark" data-aos="fade-up">
           <div className="split-container">
             <div className="split-text">
-              <h2 className='standard-header'>Our Expertise</h2>
+              <p className='standard-header'>Our Expertise</p>
               <p>
                 We understand that every business is unique, and our services are designed to align seamlessly with your objectives. From the first concept to final deployment, we ensure that all aspects of your digital transformation are handled with care, attention, and expertise.
               </p>
               <p>Our core areas of specialization include:</p>
               <ul>
                 <li>
-                  <span style={{ color: '#f9a826' }}>✓</span>{' '}
-                  <strong>Web Development</strong> - We design responsive, user-friendly websites that not only look great but also deliver an exceptional user experience, optimized for speed, security, and scalability.
+                  <i className="fas fa-check-circle"></i> {'  '}
+                  <strong>  Web Development</strong> - We design responsive, user-friendly websites that not only look great but also deliver an exceptional user experience, optimized for speed, security, and scalability.
                 </li>
                 <li>
-                  <span style={{ color: '#f9a826' }}>✓</span>{' '}
+                  <i className="fas fa-check-circle"></i>{'  '}
                   <strong>Mobile App Development</strong> - Whether you're looking for native or cross-platform applications, we build apps that engage users and drive growth, all while maintaining high standards of performance and security.
                 </li>
                 <li>
-                  <span style={{ color: '#f9a826' }}>✓</span>{' '}
+                 <i className="fas fa-check-circle"></i>{' '}
                   <strong>Custom Systems & Software</strong> - We offer tailored software solutions that streamline your business operations, increase efficiency, and ensure your long-term success in the digital space.
                 </li>
                 <li>
-                  <span style={{ color: '#f9a826' }}>✓</span>{' '}
+                  <i className="fas fa-check-circle"></i>{' '}
                   <strong>Maintenance and Support</strong> - We offer ongoing support and maintenance to ensure your systems stay up-to-date and functional. Our team is always available to assist you with any issues or updates you may need.
                 </li>
               </ul>
@@ -95,7 +95,7 @@ const Home = () => {
         <section className="split-section light" data-aos="fade-up">
           <div className="split-container reverse">
             <div className="split-text">
-              <h2 className='standard-header'>How We Work</h2>
+              <p className='standard-header'>How We Work</p>
               <p>Our structured, proven process turns ideas into tangible products that deliver results. We listen, iterate, and partner with you to craft solutions that solve real problems.</p>
 
               <div className="process-flow">
@@ -142,12 +142,12 @@ const Home = () => {
         <section className="split-section dark" data-aos="fade-up">
           <div className="split-container reverse">
             <div className="split-text">
-              <h2 className='standard-header'>Why Choose Us</h2>
+              <p className='standard-header'>Why Choose Us</p>
               <p>We’re more than just a development agency — we’re your long-term digital partner. Our collaborative approach, expertise, and commitment to your success make us the ideal team to bring your ideas to life.</p>
               <ul>
-                <li><strong>✓ Vision-Driven:</strong> We build what matters most to you.</li>
-                <li><strong>✓ Experienced Team:</strong> Our team combines years of experience in tech and business.</li>
-                <li><strong>✓ Reliable Support:</strong> We provide ongoing assistance and growth opportunities even after launch.</li>
+                <li><i className="fas fa-check-circle"></i><strong> Vision-Driven:</strong> We build what matters most to you.</li>
+                <li><i className="fas fa-check-circle"></i><strong> Experienced Team:</strong> Our team combines years of experience in tech and business.</li>
+                <li><i className="fas fa-check-circle"></i><strong> Reliable Support:</strong> We provide ongoing assistance and growth opportunities even after launch.</li>
               </ul>
             </div>
             <div

@@ -4,9 +4,8 @@
   padding: 0;
 }
 
-p, li, b, strong {
-  font-size: 1.3rem !important;
-
+.standard-header {
+  font-weight: 600;
 }
 
 .company-details {
@@ -27,21 +26,28 @@ p, li, b, strong {
   text-align: center;
   flex-direction: column;
   padding: 2rem;
+  padding-top: rem;
   width: 100%;
 }
+
+.cont {
+  width: 100%;
+}
+
 
 .badge {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: .9rem !important;
   margin-bottom: 1rem;
   color: #f9a826;
+  margin-top: 2rem;
 }
 
 .headline {
-  font-size: 8rem;
+  font-size: 4.5rem;
   line-height: 1.3;
   font-weight: bold;
   width: 80%;
@@ -54,9 +60,8 @@ p, li, b, strong {
 
 .subtext {
   margin-top: 2rem;
-  font-size: 1.5rem;
   color: #ccc;
-  width: 70%;
+  width: 60%;
   margin-bottom: 2rem;
 }
 
@@ -89,7 +94,7 @@ p, li, b, strong {
 .service {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -106,7 +111,6 @@ p, li, b, strong {
 }
 
 .tiles-container h2 {
-  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -114,7 +118,7 @@ p, li, b, strong {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7rem;
+  gap: 3rem;
 }
 
 .tile {
@@ -126,7 +130,7 @@ p, li, b, strong {
 }
 
 .tile-icon {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #f9a826;
   margin-bottom: 1rem;
 }
@@ -167,7 +171,7 @@ p, li, b, strong {
 }
 
 .split-text h2 {
-  font-size: 3rem;
+
   margin-bottom: 1rem;
 }
 
@@ -183,7 +187,6 @@ p, li, b, strong {
 
 .split-text ul li {
   margin-bottom: 1rem;
-  font-size: 1rem;
 }
 
 .split-image {
@@ -226,53 +229,54 @@ p, li, b, strong {
   font-size: 1.5rem;
   color: #f9a826;
 }
+
+
 @media (max-width: 1440px) {
   .tiles {
     gap: 2rem;
   }
 
-  .headline {
-    font-size: 5.5rem;
-  }
+
   .subtext {
-    font-size: 1.2rem;
     width: 60%;
   }
 
-  .tiles-container h2 {
-    font-size: 3rem;
-  }
   .tiles {
-    gap: 5rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .tile {
+    padding: 1rem 3rem;
+    min-height: 230px;
+    width: 20%;
   }
 
   .service{
     gap: 0;
-    font-size: 1.1rem !important; 
+
   }
 
-  h3 {
-    font-size: 1.5rem !important;
-  }
 
-  p, li, b, strong {
-    font-size: 1rem !important;
-  }
+}
 
-  .standard-header {
-    font-size: 2.7rem !important;
+@media (max-width: 1260px) {
+  .tiles {
+    gap: 2rem;
+    justify-content: center;
+  }
+.tile {
+    padding: 1rem 3rem;
+    min-height: 230px;
+    width: 40%;
   }
 }
 /* Media Queries */
-@media (max-width: 1024px) {
-  .headline {
-    font-size: 3.8rem;
-    width: 90%;
-  }
+@media (max-width: 1172px) {
 
   .subtext {
     width: 70%;
-    font-size: 1.1rem;
+
   }
 
   /* Split Sections */
@@ -299,44 +303,46 @@ p, li, b, strong {
   }
 
   .split-image {
-    width: 90%;
+    width: 70%;
     height: 200px;
-    min-height: 300px;
-  }
-
-  h3 {
-    font-size: 1.3rem !important;
-  }
-
-  p {
-    font-size: 1rem !important;
-  }
-
-  .standard-header {
-    font-size: 2.5rem !important;
-  }
-  .tiles-container h2 {
-    font-size: 2.5rem;
+    min-height: 320px;
   }
   
   .service{
     gap: 0;
-    font-size: 1rem !important; 
+   
+  }
+  .tiles {
+    gap: 2rem;
+    justify-content: center;
+  }
+    .tile {
+    padding: 1rem 3rem;
+    min-height: 230px;
+    width: 40%;
+  }
+
+  .tile-icon {
+    font-size: 2.6rem;
+  }
+
+  .container .services .card .icon {
+    font-size: 2.5rem !important;
+  }
+
+  .step-icon {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
   }
 }
 
 
 @media (max-width: 768px) {
+  .badge {
+    font-size: .6rem !important;
+  }
   .hero {
     padding: 1.5rem;
-  }
-
-  .headline {
-    font-size: 3rem;
-  }
-
-  .badge {
-    font-size: 0.8rem;
   }
 
   .tiles {
@@ -347,7 +353,12 @@ p, li, b, strong {
 
   .tile {
     width: 45%;
-    min-height: 320px;
+    height: 240px;;
+    min-height: 240px;
+  }
+
+  .tile-icon {
+    font-size: 2.8rem;
   }
 
   .services {
@@ -361,51 +372,33 @@ p, li, b, strong {
   }
 
   .split-image {
-    width: 90%;
+    width: 70%;
     height: 200px;
     min-height: 300px;
   }
 
-  h3 {
-    font-size: 1.5rem !important;
-  }
-
-  p {
-    font-size: 1rem !important;
-  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 555px) {
   .hero {
     padding: 1.2rem;
     padding-top: 7rem !important;
     padding-bottom: 3rem !important;
   }
 
-  .headline {
-    font-size: 2.5rem;
-  }
-
-  .subtext {
-    font-size: 0.9rem;
-  }
-
-  .split-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .tiles-container h2 {
-    font-size: 2rem;
-  }
-
   .tiles {
     flex-direction: column;
     align-items: center;
+    gap:  1rem;;
   }
 
   .tile {
     width: 100%;
-    min-height: 230px;
+    height: 190px;
+    min-height: 190px;
+  }
+  .tile-icon {
+    font-size: 2.4rem;
   }
 
   .split-image {
@@ -419,47 +412,29 @@ p, li, b, strong {
     padding: 4rem .8rem;
   }
 
-
-  h3 {
-    font-size: 1.3rem !important;
-  }
-
-  p {
-    font-size: 1rem !important;
-  }
-
-  h2 {
-    font-size: 1.8rem !important;
-  }
-
   .process-flow {
     flex-direction: column;
     gap: 10px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
 
   /* Add responsive styles here */
   nav .container .navbar-brand {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   nav .container .navbar-nav .nav-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   nav .container .navbar-nav .nav-link.active {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   nav .container .navbar-nav .nav-link:hover {
-    font-size: 0.9rem;
-  }
-
-  .headline {
-    font-size: 2.5rem;
-    width: 90%;
+    font-size: 1rem;
   }
 
   .tiles {
@@ -469,11 +444,12 @@ p, li, b, strong {
 
   .tile {
     width: 100%;
-    min-height: 200px;
+    height: 180px;
+    min-height: 180px;
   }
 
-  .tiles-container h2 {
-    font-size: 1.8rem;
+  .tile-icon {
+    font-size: 2.3rem;
   }
 
   .subtext {
@@ -485,22 +461,19 @@ p, li, b, strong {
     padding: 1rem;
   }
 
-  .split-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .split-text p {
-    font-size: 1rem;
+  /* Split Sections */
+  .split-section {
+    padding: 2rem .5rem;
   }
 
   .split-image {
     width: 90%;
-    height: 200px;
-    min-height: 250px;
+    height: 190px;
+    min-height: 200px;
   }
 
   .step-icon {
-    font-size: 2.7rem;
+    font-size: 2rem;
     padding: 0.5rem 1rem;
   }
 }
@@ -513,34 +486,29 @@ p, li, b, strong {
   }
 
   nav .container .navbar-nav .nav-link {
-    font-size: 0.8rem;
+    font-size: .9rem;
   }
 
   nav .container .navbar-nav .nav-link.active {
-    font-size: 0.8rem;
+    font-size: .9rem;
   }
 
   nav .container .navbar-nav .nav-link:hover {
-    font-size: 0.8rem;
+    font-size: .9rem;
   }
 
   .headline {
-    font-size: 2.3rem;
     width: 90%;
   }
 
-  .tiles-container h2 {
-    font-size: 1.5rem;
-  }
 
   .subtext {
     width: 100%;
-    font-size: 0.9rem;
   }
 
   /* Split Sections */
   .split-section {
-    padding: 4rem .5rem;
+    padding: 2rem .5rem;
   }
 
 
@@ -548,18 +516,10 @@ p, li, b, strong {
     padding: 1rem;
   }
 
-  .split-text h2 {
-    font-size: 1.5rem;
-  }
-
-  .split-text p {
-    font-size: 0.9rem;
-  }
-
   .split-image {
     width: 90%;
-    height: 200px;
-    min-height: 250px;
+    height: 180px;
+    min-height: 180px;
   }
 
   .process-step .step-text strong {
@@ -575,19 +535,6 @@ p, li, b, strong {
     font-size: 1.5rem;
   }
 
-  li {
-    font-size: 0.9rem;
-  }
-
-  h3 {
-    font-size: 1.2rem !important;
-  }
-
-  p {
-    font-size: 0.9rem !important;
-  }
-
-
   .tiles {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -599,7 +546,6 @@ p, li, b, strong {
   }
 
   .tile-icon {
-    font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
@@ -613,4 +559,217 @@ p, li, b, strong {
   }
 
 
+}
+
+/* === Base Styles === */
+body {
+  font-size: 1rem; /* 16px */
+}
+
+p, li, b, strong, .subtext, .service {
+  font-size: 1.14rem;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 5vw, 3em);
+}
+
+
+h3 {
+  font-size: 1rem;
+}
+
+.standard-header {
+  font-size: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+.tiles-container h2,
+.split-text h2 {
+  font-size: 2.1rem;
+}
+
+@media (min-width: 1441px) {
+  h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .headline {
+    font-size: 3.5rem;
+  }
+
+  .step-icon {
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* === 1440px and below === */
+@media (max-width: 1440px) {
+  p, li, b, strong,
+  .service,
+  .subtext {
+    font-size: 1.05rem;
+  }
+
+  .headline {
+    font-size: 3rem;
+  }
+
+  .standard-header {
+    font-size: 1.8rem;
+  }
+
+  .tiles-container h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* === 1024px and below === */
+@media (max-width: 1024px) {
+  .headline {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.07rem !important;
+  }
+
+  .step-icon {
+    font-size: 1.3rem;
+    padding: 0.4rem .8rem;
+  }
+
+
+  .tiles-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .standard-header {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* === 768px and below === */
+@media (max-width: 768px) {
+  .headline {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .hero {
+    min-height: 60vh;
+  }
+
+  .badge {
+    font-size: 0.7rem !important;
+  }
+
+  .subtext,
+  p,
+  li, .service, strong {
+    font-size: 0.95rem;
+  }
+
+  h3 {
+  font-size: 1rem !important;
+}
+
+  .tiles-container h2,
+  .split-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .step-icon {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* === 480px and below === */
+@media (max-width: 480px) {
+  .headline {
+    font-size: 1.9rem;
+    width: 90%;
+  }
+
+  .subtext {
+    width: 90%;
+  }
+
+  .subtext,
+  p,
+  li, .service, strong {
+    font-size: 0.9rem ;
+  }
+
+  
+  h3 {
+  font-size: 1rem !important;
+}
+
+
+  .tiles-container h2,
+  .split-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .standard-header {
+    font-size: 1.5rem;
+  }
+
+  .tile {
+    padding: 1rem 2rem;
+  }
+}
+
+/* === 375px and below === */
+@media (max-width: 376px) {
+  .headline {
+    font-size: 1.7rem;
+  }
+
+  .subtext, .service,
+  p,
+  li, strong {
+    font-size: 0.8rem;
+  }
+
+
+   h3 {
+  font-size: .9rem !important;
+}
+
+
+  nav .container .navbar-brand,
+  nav .container .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .tiles-container h2,
+  .split-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .tiles{
+    gap: 1rem;
+  }
+
+  .tile {
+    padding: 1rem 1.5rem;
+  }
+
+  .step-icon {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+  }
 }

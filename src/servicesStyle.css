@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 #service-sect {
     padding: 60px 0 !important;
     background: linear-gradient(to bottom right, #0f172a, #000000);
@@ -16,6 +14,7 @@
 }
 
 #service-sect .container .services {
+
     max-width: 100%;
     margin: 0 auto;
     padding: 0 2.5rem;
@@ -23,8 +22,6 @@
 }
 
 #ServiceHeading {
-    font-size: 36px;
-    font-weight: 600;
     color: #f1f5f9;
     margin-bottom: 50px;
     text-align: center;
@@ -33,13 +30,12 @@
 .container .services {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 40px;
     justify-content: center;
     margin-bottom: 50px;
 }
 
 .container .services .card {
-    flex: 1 1 300px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -61,7 +57,7 @@
 
 .container .services .card .icon {
     color: #60a5fa;
-    font-size: 48px;
+    font-size: 2.7rem;
     margin-bottom: 20px;
 }
 
@@ -137,7 +133,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1440px) {
+@media (max-width: 1800px) {
     #service-sect .container {
         padding: 0;
     }
@@ -145,22 +141,33 @@
     #service-sect .container .services {
         padding-left: 4rem;
         padding-right: 4rem;
+         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 
     .container .services .card {
-        max-width: 30%;
+       max-width: 100%;
+        height: auto;
         max-height: 420px;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1172px) {
     #service-sect .container {
         max-width: 90%;
         padding: 0;
     }
 
+    #service-sect .split-container {
+        flex-direction: row;
+    }
+
+   
     .container .services .card {
         max-width: 100%;
+        height: 300px;
+        max-height: 390px;
     }
 
     .detail-section {
@@ -177,28 +184,39 @@
     }
 }
 
+@media (max-width: 870px) {
+ #service-sect .split-container {
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 768px) {
     #service-sect {
         padding: 50px 20px;
         padding-bottom: 5rem;
     }
 
+    
     #service-sect .container {
         max-width: 740px;
     }
 
     #service-sect .container .services {
-        padding-left: .5rem;
-        padding-right: .5rem;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+        gap: 20px;
     }
 
     .container .services {
         width: 100%;
         gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .container .services .card {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     #ServiceHeading {
@@ -206,7 +224,7 @@
     }
 
     .container .services .card .icon {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .container .services .card .title {
@@ -228,24 +246,33 @@
 
 }
 
-@media (max-width: 470px) {
-    
-    .standard-header {
-        font-size: 1.9rem !important;
+@media (max-width: 560px) {
+    #service-sect .container .services {
+        grid-template-columns: auto;
+
     }
+}
+
+@media (max-width: 470px) {
+
     #service-sect {
         padding: 50px 15px;
         padding-bottom: 5rem;
     }
 
+    #service-sect .container .services {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
     .container .services .card {
-        max-width: 90%;
+        max-width: 100%;
         padding: 20px 15px;
         min-height: 230px;
     }
 
     .container .services .card .icon {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .container .services .card .title {
@@ -266,14 +293,19 @@
         font-size: 28px;
     }
 
+        #service-sect .container .services {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .container .services .card {
-        max-width: 90%;
+        max-width: 100%;
         padding: 20px 15px;
         min-height: 230px;
     }
 
     .container .services .card .icon {
-        font-size: 36px;
+        font-size: 33px;
     }
 
     .container .services .card .title {
