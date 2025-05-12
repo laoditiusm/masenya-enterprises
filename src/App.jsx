@@ -32,22 +32,30 @@ function MainLayout() {
       <ScrollToTop />
       <div className="app-container">
         <Navbar bg="black" variant="dark" expand="lg" expanded={expanded} onToggle={setExpanded} className="sticky-navbar">
-  <Container>
-    <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
-      <img src={Logo} alt="Logo" className="logo" style={{ width: '55px', height: 'auto', marginRight: '10px' }} />
-      <span id="bannerL">M</span>asenya Enterprise
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(!expanded)} />
-    <Navbar.Collapse id="navbar-nav">
-      <Nav className="ms-auto">
-        <Nav.Link as={Link} to="/" className="px-3" onClick={() => setExpanded(false)}>Home</Nav.Link>
-        <Nav.Link as={Link} to="/about-us" className="px-3" onClick={() => setExpanded(false)}>About</Nav.Link>
-        <Nav.Link as={Link} to="/services" className="px-3" onClick={() => setExpanded(false)}>Services</Nav.Link>
-        <Nav.Link as={Link} to="/contact-us" className="px-3" onClick={() => setExpanded(false)}>Contact Us</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
+          <Container>
+            <Navbar.Brand
+              as={Link}
+              to={location.pathname}
+              onClick={(e) => {
+                e.preventDefault(); // Prevent navigation since we’re staying on same page
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
+                setExpanded(false); // Close mobile menu
+              }}
+            >
+              <img src={Logo} alt="Logo" className="logo" style={{ width: '55px', height: 'auto', marginRight: '10px' }} />
+              <span id="bannerL">M</span>asenya Enterprise
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(!expanded)} />
+            <Navbar.Collapse id="navbar-nav">
+              <Nav className="ms-auto">
+                <Nav.Link as={Link} to="/" className="px-3" onClick={() => setExpanded(false)}>Home</Nav.Link>
+                <Nav.Link as={Link} to="/about-us" className="px-3" onClick={() => setExpanded(false)}>About</Nav.Link>
+                <Nav.Link as={Link} to="/services" className="px-3" onClick={() => setExpanded(false)}>Services</Nav.Link>
+                <Nav.Link as={Link} to="/contact-us" className="px-3" onClick={() => setExpanded(false)}>Contact Us</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
 
         <div className="main-content">
           <Routes>
@@ -73,23 +81,11 @@ function MainLayout() {
             <div className="footer-main">
               <div className="footer-container">
                 <div className="footer-column">
-                  <h4>MASENYA ENTERPRISE</h4>
-                  <p>&copy; 2025</p>
-                </div>
-
-                <div className="footer-column">
                   <h4>Company</h4>
                   <ul>
                     <li><Link to="/about-us">About Us</Link></li>
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/contact-us">Contact Us</Link></li>
-                  </ul>
-                </div>
-                <div className="footer-column">
-                  <h4>Further Information</h4>
-                  <ul>
-                    <li><Link to="/">Terms & Conditions</Link></li>
-                    <li><Link to="/">Privacy Policy</Link></li>
                   </ul>
                 </div>
                 <div className="footer-column">

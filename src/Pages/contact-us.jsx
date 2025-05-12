@@ -53,7 +53,7 @@ const ContactUs = () => {
                   <ul className="contact-info">
                     <li>
                       <div className="info-left"><i className="fas fa-mobile-alt"></i></div>
-                      <div className="info-right"><h4>+27 888 8883</h4></div>
+                      <div className="info-right"><h4>+27 87 149 0302</h4></div>
                     </li>
                     <li>
                       <div className="info-left"><i className="fas fa-at"></i></div>
